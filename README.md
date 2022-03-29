@@ -8,7 +8,7 @@ select age, avg(rate) as avgrate from (select * from t_user join (select * from 
 
 执行截图：
 
-![image-20220329112122021](C:\Users\ccq\AppData\Roaming\Typora\typora-user-images\image-20220329112122021.png)
+![q1](q1.png)
 
 
 
@@ -20,7 +20,7 @@ select 'M' as sex, moviename as name, avgrate, total from t_movie join (select m
 
 执行截图：
 
-![image-20220329114544972](C:\Users\ccq\AppData\Roaming\Typora\typora-user-images\image-20220329114544972.png)
+![q2](q2.png)
 
 * 题目三：找出影评次数最多的女士所给出最高分的 10 部电影的平均影评分，展示电影名和平均影评分（可使用多行 SQL）。
 
@@ -30,5 +30,5 @@ select moviename, avgrate from t_movie join (select movieid, avg(rate) as avgrat
 
 执行截图：
 
-![image-20220329160040954](C:\Users\ccq\AppData\Roaming\Typora\typora-user-images\image-20220329160040954.png)
+![q3](q3.png)
 
